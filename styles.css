@@ -1,28 +1,49 @@
 .container {
     width: 300px;
     margin: auto;
+    
 }
+h2 {
+    color: #e91e63; 
+    text-align: center;
+    font-weight: bold;
+}
+
+
 .option-left {
-    /* display: flex; */
-    flex-direction: column;}
-  .option-content {
     display: flex;
-    justify-content: space-between; 
-    width: 100%;
-  }
-  .discount {
-    background-color: #d16161; 
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.unit-label {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.unit-label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.discount {
+    background-color: #d16161;
     padding: 2px 5px;
-    border-radius: 3px; 
-    font-size: 0.8em; 
-  }
-  
+    border-radius: 3px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+    
 
 .option {
     border: 2px solid #ccc;
     padding: 10px;
     margin: 10px 0;
     cursor: pointer;
+}
+.most-popular {
+    position: relative; 
+    border: 2px solid #ff4d79; 
+    background-color: #fff5f8; 
 }
 .option most-popular {
     display: flex;
@@ -32,20 +53,41 @@
     border-color: #007bff;
     background: #f0f8ff;
 }
+.option-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
 .standard-price {
     text-decoration: line-through;
     margin-left: 30px;
     font-size: 0.8em;
 }
-.standard-text{
-    margin-right: 20px;
+.standard-text {
+    display: block;  
+    margin-top: 3px;
     font-size: 0.8em;
 }
 .dropdowns {
     display: none;
     margin-top: 10px;
 }
+.popular-tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #ff4d79; 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 .info-bar {
     display: flex;
@@ -56,9 +98,12 @@
 .free-delivery{
     color: rgb(220, 86, 68);
 }
+
 .option-right {
-    text-align: right; 
-  }
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
   .standard-text {
  
     width: 100%;

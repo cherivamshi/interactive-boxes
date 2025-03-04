@@ -9,7 +9,7 @@ function selectOption(option, price) {
             document.querySelector(`input[name="unit"][value="${option}"]`).checked = true;
             document.getElementById(`dropdowns-${option}`).style.display = "block";
 
-            // Update total price
+           
             document.getElementById("total").innerText = price;
         }
 

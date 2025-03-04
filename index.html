@@ -13,12 +13,13 @@
         <div class="option" onclick="selectOption(1, '$10.00 USD')">
             <input type="radio" name="unit" value="1">
             <div class="option-content">
-                <div class="option-left">
-                  <span class="unit-label">1Unit</span>
-                  <span class="discount">10% Off</span>
-                 
-                  <span class="standard-text">Standard Price</span>
+              <div class="option-left">
+                <div class="unit-label-wrapper">
+                    <span class="unit-label">1Unit</span>
+                    <span class="discount">10% Off</span>
                 </div>
+                <span class="standard-text">Standard Price</span>
+            </div>
                 <div class="option-right">
                   <span class="price">$10.00 USD</span>
                   <span class="standard-price">$24.00 USD</span>
@@ -31,18 +32,23 @@
         </div>
         
         <div class="option most-popular" onclick="selectOption(2, '$18.00 USD')">
+          <span class="popular-tag">MOST POPULAR</span>
             <input type="radio" name="unit" value="2" >
             
             <div class="option-content">
-                <div class="option-left">
-                  <span class="unit-label">2Unit</span>
-                  <span class="discount">20% Off</span>
+              <div class="option-left">
+                
+              <div class="unit-label-wrapper">
+                <span class="unit-label">2Unit</span>
+                <span class="discount">20% Off</span>
+            </div>
+          
 
                  
                  
                 </div>
                 <div class="option-right">
-                  <span class="price">$10.00 USD</span>
+                  <span class="price">$18.00 USD</span>
                   <span class="standard-price">$24.00 USD</span>
                 </div>
               </div>
@@ -64,14 +70,16 @@
 
             <div class="option-content">
                 <div class="option-left">
+                  <div class="unit-label-wrapper">
                   <span class="unit-label">3Unit</span>
                   <span class="discount">30% Off</span>
+                  </div>
 
                  
                  
                 </div>
                 <div class="option-right">
-                  <span class="price">$10.00 USD</span>
+                  <span class="price">$24.00 USD</span>
                   <span class="standard-price">$24.00 USD</span>
                 </div>
               </div>
