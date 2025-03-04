@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAY! It's BOGO</h2>
+        
+        <div class="option" onclick="selectOption(1, '$10.00 USD')">
+            <input type="radio" name="unit" value="1">
+            <div class="option-content">
+                <div class="option-left">
+                  <span class="unit-label">1Unit</span>
+                  <span class="discount">10% Off</span>
+                 
+                  <span class="standard-text">Standard Price</span>
+                </div>
+                <div class="option-right">
+                  <span class="price">$10.00 USD</span>
+                  <span class="standard-price">$24.00 USD</span>
+                </div>
+              </div>
+            <div class="dropdowns" id="dropdowns-1">
+                <label>Size: <select><option>S</option><option>M</option></select></label>
+                <label>Color: <select><option>Black</option><option>Blue</option></select></label>
+            </div>
+        </div>
+        
+        <div class="option most-popular" onclick="selectOption(2, '$18.00 USD')">
+            <input type="radio" name="unit" value="2" >
+            
+            <div class="option-content">
+                <div class="option-left">
+                  <span class="unit-label">2Unit</span>
+                  <span class="discount">20% Off</span>
+
+                 
+                 
+                </div>
+                <div class="option-right">
+                  <span class="price">$10.00 USD</span>
+                  <span class="standard-price">$24.00 USD</span>
+                </div>
+              </div>
+
+            <div class="dropdowns" id="dropdowns-2">
+                <div>
+                    <label>Size #1: <select><option>S</option><option>M</option></select></label>
+                    <label>Color #1: <select><option>Black</option><option>Blue</option></select></label>
+                </div>
+                <div>
+                    <label>Size #2: <select><option>S</option><option>M</option></select></label>
+                    <label>Color #2: <select><option>Black</option><option>Blue</option></select></label>
+                </div>
+                </div>
+        </div>
+        
+        <div class="option" onclick="selectOption(3, '$24.00 USD')">
+            <input type="radio" name="unit" value="3" >
+
+            <div class="option-content">
+                <div class="option-left">
+                  <span class="unit-label">3Unit</span>
+                  <span class="discount">30% Off</span>
+
+                 
+                 
+                </div>
+                <div class="option-right">
+                  <span class="price">$10.00 USD</span>
+                  <span class="standard-price">$24.00 USD</span>
+                </div>
+              </div>
+
+            <div class="dropdowns" id="dropdowns-3">
+                <div>
+                    <label>Size #1: <select><option>S</option><option>M</option></select></label>
+                    <label>Color #1: <select><option>Black</option><option>Blue</option></select></label>
+                </div>
+                <div>
+                    <label>Size #2: <select><option>S</option><option>M</option></select></label>
+                    <label>Color #2: <select><option>Black</option><option>Blue</option></select></label>
+                </div>
+                <div>
+                    <label>Size #3: <select><option>S</option><option>M</option></select></label>
+                    <label>Color #3: <select><option>Black</option><option>Blue</option></select></label>
+                </div>
+               
+            </div>
+        </div>
+        
+        <div class="info-bar">
+            <p class="free-delivery">Free Delivery</p>
+            <p class="total-price">Total: <span id="total">0 USD</span></p>
+        </div>
+        
+        <button id="add-to-cart">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

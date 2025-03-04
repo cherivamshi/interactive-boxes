@@ -1,0 +1,74 @@
+.container {
+    width: 300px;
+    margin: auto;
+}
+.option-left {
+    /* display: flex; */
+    flex-direction: column;}
+  .option-content {
+    display: flex;
+    justify-content: space-between; /* Space between the left and right sections */
+    width: 100%;
+  }
+  .discount {
+    background-color: #d16161; /* Background color for the discount tag */
+    padding: 2px 5px;
+    border-radius: 3px; /* Rounded corners for the discount tag */
+    font-size: 0.8em; /* Slightly smaller font size for the discount */
+  }
+  
+
+.option {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.option most-popular {
+    display: flex;
+    justify-content: space-between;
+}
+.option.selected {
+    border-color: #007bff;
+    background: #f0f8ff;
+}
+
+.standard-price {
+    text-decoration: line-through;
+    margin-left: 30px;
+    font-size: 0.8em;
+}
+.standard-text{
+    margin-right: 20px;
+    font-size: 0.8em;
+}
+.dropdowns {
+    display: none;
+    margin-top: 10px;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.free-delivery{
+    color: rgb(220, 86, 68);
+}
+.option-right {
+    text-align: right; /* Align the price to the right */
+  }
+  .standard-text {
+ 
+    width: 100%;/* Slightly smaller font size for the standard price */
+  }
+  button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
