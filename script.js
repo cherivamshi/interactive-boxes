@@ -14,7 +14,7 @@ function selectOption(option, price) {
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            selectOption(0, "$0.00 USD");
+            selectOption(2, "$18.00 USD");
         });
     ;
 
