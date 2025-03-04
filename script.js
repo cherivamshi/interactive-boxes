@@ -18,10 +18,4 @@ function selectOption(option, price) {
         });
     ;
 
-    // document.querySelectorAll("input[name='unit']").forEach(option => {
-    //     option.addEventListener("change", function () {
-    //         let price = this.id === "unit1" ? "$10.00 USD" : this.id === "unit2" ? "$18.00 USD" : "$24.00 USD";
-    //         document.getElementById("total-price").textContent = price;
-    //     });
-    // });
-    
+   
