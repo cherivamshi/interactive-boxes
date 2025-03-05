@@ -117,3 +117,21 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
 }
+h2 {
+    color: #e91e63;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2::before,
+h2::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #a0a0a0;
+    margin: 0 10px;
+}
