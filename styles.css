@@ -42,16 +42,15 @@ h2 {
 }
 .most-popular {
     position: relative; 
-    border: 2px solid #ff4d79; 
-    background-color: #fff5f8; 
+
 }
 .option most-popular {
     display: flex;
     justify-content: space-between;
 }
 .option.selected {
-    border-color: #007bff;
-    background: #f0f8ff;
+    border-color: #ff4d79;
+    background: #fff5f8;
 }
 .option-content {
     display: flex;
