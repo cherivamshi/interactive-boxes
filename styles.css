@@ -16,6 +16,7 @@ h2 {
     align-items: flex-start; 
 }
 .unit-label {
+    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 5px; 
@@ -45,6 +46,9 @@ h2 {
     position: relative; 
 
 }
+.price{
+    font-weight: bold;
+}
 .option most-popular {
     display: flex;
     justify-content: space-between;
@@ -70,6 +74,7 @@ h2 {
     display: block;  
     margin-top: 3px;
     font-size: 0.8em;
+    margin-left: 20px;
 }
 .dropdowns {
     display: none;
